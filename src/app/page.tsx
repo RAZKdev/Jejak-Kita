@@ -57,14 +57,14 @@ export default async function HomePage() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/destinations/seoul.jpg"
-                  alt="Pemandangan lanskap kota Seoul yang damai dengan arsitektur istana tradisional dan latar perbukitan, Korea Selatan"
+                  alt="Pemandangan lanskap kota Seoul, Korea Selatan"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-103"
                   loading="eager"
                 />
               </div>
               <div className="p-3 bg-surface/80 border-t border-border">
                 <span className="text-[11px] text-foreground-muted block italic">
-                  &quot;Kota Seoul — Lanskap kota yang tenang dan arsitektur bersejarah tanpa hiruk-pikuk keramaian.&quot;
+                  &quot;Seoul, Korea Selatan — Harmoni keindahan budaya dan kota modern.&quot;
                 </span>
               </div>
             </div>
