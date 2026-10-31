@@ -56,15 +56,15 @@ export default async function HomePage() {
               <div className="relative aspect-4/3 w-full overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80"
-                  alt="Jalur setapak kuil yang damai dan asri di Kyoto, Jepang"
+                  src="/images/destinations/seoul.jpg"
+                  alt="Pemandangan lanskap kota Seoul yang damai dengan arsitektur istana tradisional dan latar perbukitan, Korea Selatan"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-103"
                   loading="eager"
                 />
               </div>
               <div className="p-3 bg-surface/80 border-t border-border">
                 <span className="text-[11px] text-foreground-muted block italic">
-                  &quot;Ketenangan dan kenyamanan ritme di setiap langkah bersama Ibu.&quot;
+                  &quot;Kota Seoul — Lanskap kota yang tenang dan arsitektur bersejarah tanpa hiruk-pikuk keramaian.&quot;
                 </span>
               </div>
             </div>
