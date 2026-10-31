@@ -18,10 +18,14 @@ export default async function HomePage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 space-y-12">
       {/* Hero Section */}
-      <section className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-b from-surface to-background p-6 md:p-10 shadow-xs">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+      <section className="relative overflow-hidden rounded-2xl border border-border bg-surface/90 dark:bg-surface/75 backdrop-blur-md p-6 md:p-10 shadow-sm dark:shadow-2xl dark:shadow-black/40">
+        {/* Subtle Decorative Ambient Glows inside Hero Card */}
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full blur-3xl opacity-20 dark:opacity-25 bg-brand pointer-events-none" aria-hidden="true" />
+        <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full blur-3xl opacity-15 dark:opacity-15 bg-accent-warm pointer-events-none" aria-hidden="true" />
+
+        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="max-w-2xl space-y-4">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface-elevated px-3 py-1 text-xs text-foreground-muted">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface-elevated/90 px-3 py-1 text-xs text-foreground-muted backdrop-blur-xs">
               <ShieldCheck className="h-4 w-4 text-brand" />
               <span>Perjalanan Pribadi Rangga & Ibu • Privat & Terpercaya</span>
             </div>
@@ -37,13 +41,13 @@ export default async function HomePage() {
 
             <div className="flex flex-wrap gap-3 pt-2">
               <Link href="/trips">
-                <Button size="lg" className="gap-2">
+                <Button size="lg" className="gap-2 shadow-xs">
                   <Calendar className="h-4 w-4" />
                   Lihat Perjalanan
                 </Button>
               </Link>
               <Link href="/recommendations">
-                <Button variant="outline" size="lg" className="gap-2">
+                <Button variant="outline" size="lg" className="gap-2 bg-surface-elevated/60 backdrop-blur-xs hover:bg-surface-elevated">
                   <Sparkles className="h-4 w-4" />
                   Eksplor Rekomendasi
                 </Button>
@@ -51,8 +55,11 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <div className="w-full lg:w-96 flex-shrink-0">
-            <div className="overflow-hidden rounded-xl border border-border shadow-xs bg-surface-elevated">
+          <div className="w-full lg:w-96 flex-shrink-0 relative">
+            {/* Subtle halo glow behind photo */}
+            <div className="absolute -inset-1.5 rounded-2xl bg-gradient-to-tr from-brand/25 to-amber-500/15 blur-md opacity-50 dark:opacity-40 pointer-events-none" aria-hidden="true" />
+
+            <div className="relative overflow-hidden rounded-xl border border-border shadow-xs bg-surface-elevated">
               <div className="relative aspect-4/3 w-full overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
