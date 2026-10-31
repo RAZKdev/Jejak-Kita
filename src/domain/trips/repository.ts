@@ -261,8 +261,8 @@ class MemoryTripRepository implements ITripRepository {
           {
             id: 'media-1',
             memory_id: 'mem-1',
-            storage_path: '/images/memories/shinjuku-bench.webp',
-            public_url: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80',
+            storage_path: '/images/memories/shinjuku-bench.svg',
+            public_url: '/images/memories/shinjuku-bench.svg',
             caption: 'Ibu menikmati suasana tenang di Shinjuku Gyoen',
             alt_text: 'Ibu duduk di bangku taman Shinjuku Gyoen dengan latar pepohonan musim gugur yang tenang',
             sort_order: 0,
@@ -283,8 +283,8 @@ class MemoryTripRepository implements ITripRepository {
           {
             id: 'media-2',
             memory_id: 'mem-2',
-            storage_path: '/images/memories/kyoto-tea.webp',
-            public_url: 'https://images.unsplash.com/photo-1545048702-79360700129e?auto=format&fit=crop&w=1200&q=80',
+            storage_path: '/images/memories/kyoto-tea.svg',
+            public_url: '/images/memories/kyoto-tea.svg',
             caption: 'Secangkir teh hijau hangat dan manisan wagashi di Gion',
             alt_text: 'Satu set teh matcha tradisional dan kue manis Jepang di atas meja kayu',
             sort_order: 0,

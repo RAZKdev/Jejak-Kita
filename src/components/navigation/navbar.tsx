@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Compass, MapPin, Calendar, Sparkles, HeartHandshake, SlidersHorizontal, Wallet, BookOpen } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 const navItems = [
   { href: '/', label: 'Beranda', icon: Compass },
@@ -28,7 +29,7 @@ export function AppNavbar() {
               <Compass className="h-5 w-5" />
             </div>
             <div>
-              <span className="text-base font-semibold tracking-tight text-foreground block leading-tight">
+              <span className="text-base font-semibold tracking-tight text-foreground block leading-tight font-serif">
                 Jejak Kita
               </span>
               <span className="text-[11px] text-foreground-muted block leading-tight">
@@ -61,7 +62,7 @@ export function AppNavbar() {
           </nav>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <Link
             href="/preferences"
             className="hidden sm:flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-xs text-foreground-muted hover:text-foreground transition-colors"
@@ -69,6 +70,9 @@ export function AppNavbar() {
             <HeartHandshake className="h-3.5 w-3.5 text-brand" />
             <span>Kenyamanan Ibu: Santai</span>
           </Link>
+
+          {/* Tombol Pengubah Mode Gelap / Terang */}
+          <ThemeToggle />
         </div>
       </div>
     </header>

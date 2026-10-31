@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="tatamiBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D2721"/>
+      <stop offset="60%" stop-color="#3A332B"/>
+      <stop offset="100%" stop-color="#201C18"/>
+    </linearGradient>
+    <linearGradient id="tableWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6E4D34"/>
+      <stop offset="40%" stop-color="#593E2A"/>
+      <stop offset="100%" stop-color="#3B281B"/>
+    </linearGradient>
+    <linearGradient id="trayWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E1C12"/>
+      <stop offset="100%" stop-color="#1A1009"/>
+    </linearGradient>
+    <radialGradient id="matchaTea" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#73A857"/>
+      <stop offset="60%" stop-color="#5B8842"/>
+      <stop offset="100%" stop-color="#41612E"/>
+    </radialGradient>
+    <radialGradient id="teaFoam" cx="45%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#8BC36A" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#6CA24E" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#486D33" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lanternLight" cx="60%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFECD1" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#FFDFB0" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background: Cozy Traditional Kyoto Machiya Interior -->
+  <rect width="1200" height="630" fill="url(#tatamiBg)"/>
+  <rect width="1200" height="630" fill="url(#lanternLight)"/>
+
+  <!-- Shoji Screen Lines (Atmospheric Background) -->
+  <g stroke="#483F34" stroke-width="4" opacity="0.4">
+    <line x1="120" y1="0" x2="120" y2="350"/>
+    <line x1="320" y1="0" x2="320" y2="350"/>
+    <line x1="520" y1="0" x2="520" y2="350"/>
+    <line x1="720" y1="0" x2="720" y2="350"/>
+    <line x1="920" y1="0" x2="920" y2="350"/>
+    <line x1="1120" y1="0" x2="1120" y2="350"/>
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+  </g>
+
+  <!-- Warm Wooden Table Surface (Perspective View) -->
+  <path d="M 0 320 L 1200 320 L 1200 630 L 0 630 Z" fill="url(#tableWood)"/>
+  <!-- Wood grain highlights -->
+  <line x1="0" y1="380" x2="1200" y2="380" stroke="#7A563A" stroke-width="2" opacity="0.6"/>
+  <line x1="0" y1="460" x2="1200" y2="460" stroke="#4D3524" stroke-width="2" opacity="0.5"/>
+  <line x1="0" y1="540" x2="1200" y2="540" stroke="#7A563A" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Traditional Lacquer Tray (Urushi Tray) -->
+  <g transform="translate(300, 340)">
+    <!-- Shadow -->
+    <ellipse cx="300" cy="180" rx="350" ry="85" fill="#140C07" opacity="0.65"/>
+    <!-- Tray Rim -->
+    <rect x="-10" y="40" width="620" height="230" rx="28" fill="#1A110B" stroke="#873523" stroke-width="4"/>
+    <rect x="5" y="55" width="590" height="200" rx="20" fill="url(#trayWood)"/>
+
+    <!-- Ceramic Matcha Bowl (Chawan) -->
+    <g transform="translate(140, 70)">
+      <!-- Bowl Shadow -->
+      <ellipse cx="90" cy="115" rx="85" ry="32" fill="#0D0907" opacity="0.7"/>
+      <!-- Outer Bowl (Handcrafted rustic ceramic) -->
+      <path d="M 10 70 Q 20 135 90 135 Q 160 135 170 70 Q 170 30 90 30 Q 10 30 10 70 Z" fill="#4A443D" stroke="#70685E" stroke-width="3"/>
+      <!-- Inner rim & Matcha Surface -->
+      <ellipse cx="90" cy="62" rx="72" ry="36" fill="#36322C"/>
+      <ellipse cx="90" cy="64" rx="66" ry="32" fill="url(#matchaTea)"/>
+      <ellipse cx="88" cy="62" rx="58" ry="26" fill="url(#teaFoam)"/>
+      <!-- Whisk froth swirls -->
+      <circle cx="82" cy="60" r="16" fill="#A8D48D" opacity="0.35"/>
+      <circle cx="102" cy="65" r="12" fill="#A8D48D" opacity="0.3"/>
+      <!-- Bowl rim organic ceramic glaze -->
+      <path d="M 18 55 Q 50 42 90 42 Q 135 42 162 55" stroke="#A89A88" stroke-width="3" fill="none" opacity="0.6"/>
+    </g>
+
+    <!-- Japanese Wagashi Sweet (Sakura/Chestnut Sweet) on Small Ceramic Plate -->
+    <g transform="translate(390, 95)">
+      <!-- Small Saucer -->
+      <ellipse cx="65" cy="80" rx="60" ry="25" fill="#EAE5DC" stroke="#C4BCAD" stroke-width="2"/>
+      <!-- Delicate Wagashi Confectionery -->
+      <ellipse cx="65" cy="74" rx="30" ry="18" fill="#E5989B"/>
+      <!-- Petal indentations on wagashi -->
+      <path d="M 65 62 L 65 86 M 45 74 L 85 74" stroke="#B56576" stroke-width="2" opacity="0.8"/>
+      <!-- Gold leaf accent dot -->
+      <circle cx="65" cy="74" r="3" fill="#E8B547"/>
+      <!-- Wooden Kuromoji Pick -->
+      <line x1="30" y1="92" x2="100" y2="84" stroke="#8C6747" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Steam rising from hot matcha (Delicate swirls) -->
+  <g stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.3" stroke-linecap="round">
+    <path d="M 510 400 Q 525 360 515 320 Q 505 280 520 250"/>
+    <path d="M 535 390 Q 545 350 535 310 Q 525 270 540 240"/>
+  </g>
+
+  <!-- Caption Plaque / Badge in image -->
+  <g transform="translate(40, 40)">
+    <rect width="260" height="48" rx="8" fill="#1C3B2B" opacity="0.85"/>
+    <text x="18" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Kedai Teh Tradisional • Gion, Kyoto</text>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8E5DD"/>
+      <stop offset="60%" stop-color="#F2EDE4"/>
+      <stop offset="100%" stop-color="#DFD7CA"/>
+    </linearGradient>
+    <linearGradient id="lawnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7B8B6F"/>
+      <stop offset="40%" stop-color="#5E7051"/>
+      <stop offset="100%" stop-color="#46543D"/>
+    </linearGradient>
+    <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D9CBB7"/>
+      <stop offset="50%" stop-color="#E5D9C8"/>
+      <stop offset="100%" stop-color="#D0C0A9"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="75%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFE8C2" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FCE1B3" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F2EDE4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky & Sun -->
+  <rect width="1200" height="630" fill="url(#skyGrad)"/>
+  <circle cx="900" cy="180" r="260" fill="url(#sunGlow)"/>
+
+  <!-- Distant Trees (Atmosphere) -->
+  <path d="M0 380 Q 150 320 300 360 T 600 340 T 900 350 Q 1050 330 1200 370 L 1200 630 L 0 630 Z" fill="#99A68D" opacity="0.6"/>
+  <path d="M0 400 Q 200 350 400 380 T 800 370 T 1200 390 L 1200 630 L 0 630 Z" fill="#758567" opacity="0.75"/>
+
+  <!-- Lawn Hill -->
+  <path d="M0 430 Q 350 380 700 420 T 1200 410 L 1200 630 L 0 630 Z" fill="url(#lawnGrad)"/>
+
+  <!-- Serene Garden Pathway -->
+  <path d="M 0 580 Q 300 520 600 510 T 1200 490 L 1200 550 Q 700 560 300 580 L 0 630 Z" fill="url(#pathGrad)" opacity="0.95"/>
+
+  <!-- Maple Canopy Trees (Autumn Momiji) -->
+  <!-- Tree 1 Left (Deep Terracotta Autumn Maple) -->
+  <path d="M 140 500 L 140 260 L 155 500 Z" fill="#422E22"/>
+  <circle cx="150" cy="220" r="95" fill="#BF5B3A" opacity="0.95"/>
+  <circle cx="210" cy="240" r="80" fill="#D47348" opacity="0.9"/>
+  <circle cx="90" cy="250" r="75" fill="#A84524" opacity="0.92"/>
+  <circle cx="150" cy="170" r="70" fill="#E88C52" opacity="0.88"/>
+
+  <!-- Tree 2 Middle Right (Golden Ginkgo Maple) -->
+  <path d="M 860 480 L 865 240 L 880 480 Z" fill="#3B2A1E"/>
+  <circle cx="870" cy="210" r="110" fill="#DDA032" opacity="0.95"/>
+  <circle cx="950" cy="230" r="90" fill="#E8B547" opacity="0.9"/>
+  <circle cx="790" cy="240" r="85" fill="#C28723" opacity="0.92"/>
+  <circle cx="870" cy="150" r="80" fill="#F0C55E" opacity="0.88"/>
+
+  <!-- Big Tree Branch Overhanging Right -->
+  <circle cx="1080" cy="160" r="120" fill="#A33E20" opacity="0.95"/>
+  <circle cx="1160" cy="200" r="100" fill="#882E14" opacity="0.92"/>
+
+  <!-- Shaded Wooden Garden Park Bench (Where Mother and Son rest) -->
+  <g transform="translate(480, 430)">
+    <!-- Bench Shadow -->
+    <ellipse cx="120" cy="95" rx="140" ry="16" fill="#24301D" opacity="0.4"/>
+    <!-- Bench Legs -->
+    <rect x="25" y="45" width="8" height="50" rx="3" fill="#2B2825"/>
+    <rect x="45" y="45" width="8" height="48" rx="3" fill="#3B3632"/>
+    <rect x="185" y="45" width="8" height="50" rx="3" fill="#2B2825"/>
+    <rect x="205" y="45" width="8" height="48" rx="3" fill="#3B3632"/>
+    <!-- Bench Slats (Seat) -->
+    <rect x="10" y="45" width="220" height="8" rx="3" fill="#C28652"/>
+    <rect x="10" y="35" width="220" height="8" rx="3" fill="#AB7240"/>
+    <rect x="10" y="25" width="220" height="8" rx="3" fill="#8E5B2E"/>
+    <!-- Bench Backrest -->
+    <rect x="15" y="-15" width="210" height="9" rx="3" fill="#D49964"/>
+    <rect x="15" y="-3" width="210" height="9" rx="3" fill="#B87B45"/>
+    <rect x="15" y="9" width="210" height="9" rx="3" fill="#996030"/>
+    <!-- Armrests -->
+    <path d="M 20 20 Q 20 0 35 15 L 35 45" stroke="#2B2825" stroke-width="5" fill="none"/>
+    <path d="M 220 20 Q 220 0 205 15 L 205 45" stroke="#2B2825" stroke-width="5" fill="none"/>
+    <!-- Thermos / Hot Tea Tumbler on the bench -->
+    <rect x="155" y="10" width="12" height="24" rx="2" fill="#E8ECE7"/>
+    <rect x="157" y="6" width="8" height="4" rx="1" fill="#1C3B2B"/>
+  </g>
+
+  <!-- Foreground Fallen Leaves -->
+  <circle cx="340" cy="560" r="5" fill="#BF5B3A" opacity="0.8"/>
+  <circle cx="380" cy="545" r="4" fill="#DDA032" opacity="0.85"/>
+  <circle cx="680" cy="540" r="6" fill="#C28723" opacity="0.8"/>
+  <circle cx="720" cy="565" r="5" fill="#A84524" opacity="0.85"/>
+  <circle cx="850" cy="530" r="6" fill="#DDA032" opacity="0.75"/>
+
+  <!-- Caption Plaque / Badge in image -->
+  <g transform="translate(40, 40)">
+    <rect width="270" height="48" rx="8" fill="#1C3B2B" opacity="0.85"/>
+    <text x="18" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Taman Shinjuku Gyoen • Tokyo</text>
+  </g>
+</svg>

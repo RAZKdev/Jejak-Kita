@@ -186,7 +186,7 @@ export function MemoriesView({ tripId }: MemoriesViewProps) {
                     onClick={() => handleToggleFavorite(mem.id)}
                     className={`rounded-full p-2 transition-colors ${
                       mem.is_favorite
-                        ? 'text-red-600 bg-red-50 hover:bg-red-100'
+                        ? 'text-red-600 bg-red-50 hover:bg-red-100 dark:bg-red-950/60 dark:text-red-400 dark:hover:bg-red-900/60'
                         : 'text-foreground-muted hover:text-red-600 hover:bg-surface'
                     }`}
                     title={mem.is_favorite ? 'Hapus dari favorit' : 'Tandai sebagai kenangan favorit'}

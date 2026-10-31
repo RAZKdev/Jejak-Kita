@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,20 +10,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#FDFBF7', // Warm ivory
-        surface: '#F4EFEA', // Soft beige
-        'surface-elevated': '#FFFFFF',
-        border: '#E7DFD5', // Sand border
-        foreground: '#242220', // Charcoal
-        'foreground-muted': '#6B655F', // Muted charcoal
+        background: 'var(--background)',
+        surface: 'var(--surface)',
+        'surface-elevated': 'var(--surface-elevated)',
+        border: 'var(--border)',
+        foreground: 'var(--foreground)',
+        'foreground-muted': 'var(--foreground-muted)',
         brand: {
-          DEFAULT: '#1C3B2B', // Deep green (forest / pine)
-          hover: '#254E39',
-          subtle: '#EBF2EE',
+          DEFAULT: 'var(--brand)',
+          hover: 'var(--brand-hover)',
+          subtle: 'var(--brand-subtle)',
         },
         accent: {
-          brown: '#7C6A59', // Muted brown / earth
-          warm: '#B85D38', // Terracotta accent
+          brown: '#7C6A59',
+          warm: '#B85D38',
           amber: '#D97706',
         },
       },
